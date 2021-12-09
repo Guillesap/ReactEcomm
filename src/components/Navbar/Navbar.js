@@ -5,7 +5,7 @@ const Navbar = () => {
             <h1>Cuadros "Estilo Bruder"</h1>
             <ul>
                 <li>
-                    HOME
+                    INICIO
                 </li>
                 <li>
                     DISEÑOS
