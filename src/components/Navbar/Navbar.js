@@ -14,9 +14,6 @@ const Navbar = () => {
                     <p>TIENDA</p>
                 </li>
                 <li>
-                    <p>TU DISEÑO</p>
-                </li>
-                <li>
                     <p>CONTACTO</p>
                 </li>
             </ul>
