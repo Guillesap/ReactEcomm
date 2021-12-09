@@ -19,7 +19,7 @@ body {
 #elMenu h1 {
   color:rgb(240, 235, 233);
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 1.7cm;
+  font-size: 2cm;
  
 }
 
@@ -27,18 +27,26 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  color:rgb(23, 23, 141);
   display: inline-block;
-  padding: 2mm;
   border: solid;
   border-color: rgb(207, 73, 10);
   margin: 1cm;
   background-color: gold;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 1mm;
 }
-
+#elMenu li p {
+  background-color: gold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 0.5mm; 
+  
+}
 #elMenu li:hover {
   color:rgb(203, 203, 216);
   border-color: rgb(118, 196, 17);
+  background-color: rgb(22, 22, 21);
+}
+#elMenu li p:hover {
+  color:rgb(203, 203, 216);
+  border-color: rgb(18, 19, 18);
   background-color: rgb(22, 22, 21);
 }
