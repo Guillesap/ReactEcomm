@@ -2,7 +2,7 @@ import React from "react";
 const Navbar = () => {
     return (
         <div id="elMenu">
-            <h1>Cuadros "Estilo Bruder"</h1>
+            <h1>"Cuadros Bruder"</h1>
             <ul>
                 <li>
                     <p>INICIO</p>
@@ -12,6 +12,9 @@ const Navbar = () => {
                 </li>
                 <li>
                     <p>TIENDA</p>
+                </li>
+                <li>
+                    <p>TU DISEÑO</p>
                 </li>
                 <li>
                     <p>CONTACTO</p>
