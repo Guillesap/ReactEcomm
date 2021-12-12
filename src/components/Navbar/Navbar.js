@@ -5,16 +5,16 @@ const Navbar = () => {
             <h1>"Cuadros Bruder"</h1>
             <ul>
                 <li>
-                    <p>INICIO</p>
+                    INICIO
                 </li>
                 <li>
-                   <p>DISEÑOS</p> 
+                   DISEÑOS
                 </li>
                 <li>
-                    <p>TIENDA</p>
+                    TIENDA
                 </li>
                 <li>
-                    <p>CONTACTO</p>
+                    CONTACTO
                 </li>
             </ul>
         </div>

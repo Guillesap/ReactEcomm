@@ -31,16 +31,11 @@ body {
   display: inline-block;
   border: solid;
   border-color: rgb(207, 73, 10);
-  margin: 1cm;
+  margin: 1.1cm;
   background-color: gold;
-  padding: 1mm;
+  padding: 4mm;
 }
-#elMenu li p {
-  background-color: gold;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  padding: 0.5mm; 
-  
-}
+
 #elMenu li:hover {
   color:rgb(203, 203, 216);
   border-color: rgb(118, 196, 17);
