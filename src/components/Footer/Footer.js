@@ -1,10 +1,12 @@
 import React from "react";
-const Footer = () => {
-    return (
-        <div id="elFooter">
-           <p>Willy S 2021. Todos los derechos reservados</p>
-        </div>
-    )
-}
 
+const Footer = ({data:{copyright, author}}) => {
+
+return(
+    <footer>
+        <p>{copyright} - {author}</p>
+    </footer>
+
+)
+}
 export default Footer
