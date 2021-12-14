@@ -2,16 +2,16 @@ import React from "react";
 const Navbar = () => {
     return (
         <div id="elMenu">
-            <h1>"Cuadros Bruder"</h1>
+            <h1>"Video CLub Willy"</h1>
             <ul>
                 <li>
                     INICIO
                 </li>
                 <li>
-                   DISEÑOS
+                   ESTRENOS
                 </li>
                 <li>
-                    TIENDA
+                    CLASICOS
                 </li>
                 <li>
                     CONTACTO

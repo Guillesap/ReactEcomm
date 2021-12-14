@@ -4,6 +4,8 @@
   background-color: rgb(20, 20, 20);
 }
 
+/*Navbar*/
+
 body {
   overflow-x: hidden;
 }
@@ -30,19 +32,54 @@ body {
   justify-content: center;
   display: inline-block;
   border: solid;
-  border-color: rgb(207, 73, 10);
+  border-color: rgb(208, 230, 12);
   margin: 1.1cm;
-  background-color: gold;
+  background-color: rgb(228, 40, 33);
   padding: 4mm;
+  color:honeydew; 
 }
 
 #elMenu li:hover {
   color:rgb(203, 203, 216);
-  border-color: rgb(118, 196, 17);
+  border-color: rgb(65, 235, 59);
   background-color: rgb(22, 22, 21);
 }
 #elMenu li p:hover {
   color:rgb(203, 203, 216);
   border-color: rgb(18, 19, 18);
   background-color: rgb(22, 22, 21);
+}
+
+
+/*Películas*/
+
+#tItulo{
+  color: red;
+  text-align: center;
+  padding: 1cm;
+}
+
+img {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  padding: 10px;
+  padding-bottom: 1cm;
+}
+
+/* Footer */
+#elFooter{
+  padding: 20px;
+  text-align: center;
+  font-size: 1cm;
+  color:azure;
+  background-color: rgb(82, 80, 80);
+}
+
+#elFooter p{
+  padding: 20px;
+  text-align: center;
+  font-size: 0.5cm;
+  color:azure;
+  background-color: rgb(82, 80, 80);
 }
