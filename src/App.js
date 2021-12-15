@@ -13,12 +13,14 @@ function App() {
 
 return(
 <>
-<Navbar titulo ="Video Club Willy"/>
+    <Navbar titulo ="Video Club Willy"/>
     <h1 id="tItulo"> Streaming y Venta de VHS para los nostálgicos.</h1>
     <Saludo/>
-<Peliculas/>
-<MyButton/>
-<Footer data ={footerData}/>
+    <Peliculas/>
+    <MyButton label ="Estrenos Onlines"/>
+    <MyButton label ="Vhs Clasicos"/>
+    <MyButton label ="Ofertas"/>
+    <Footer data ={footerData}/>
 </>
 )
 }

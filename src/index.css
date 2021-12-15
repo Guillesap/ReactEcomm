@@ -71,7 +71,7 @@ img {
 }
 
 /*Boton cartelera*/
-#cArtelera {
+#bOton {
   background-color: red;
   display: flex;
   flex-direction: row;
