@@ -2,7 +2,7 @@ import React from "react";
 const Navbar = () => {
     return (
         <div id="elMenu">
-            <h1>"Video CLub Willy"</h1>
+            <img src="/logovhs.png" alt= "logo"/> 
             <ul>
                 <li>
                     INICIO
