@@ -2,6 +2,8 @@ import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
 import Peliculas from "./components/Peliculas/Peliculas";
 import Saludo from "./greeting";
+import MyButton from "./button";
+
 
 function App() {
     const footerData = {
@@ -15,6 +17,7 @@ return(
     <h1 id="tItulo"> Streaming y Venta de VHS para los nostálgicos.</h1>
     <Saludo/>
 <Peliculas/>
+<MyButton/>
 <Footer data ={footerData}/>
 </>
 )

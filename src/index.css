@@ -70,16 +70,18 @@ img {
   padding-bottom: 1cm;
 }
 
-#elBoton {
+/*Boton cartelera*/
+#cArtelera {
+  background-color: red;
   display: flex;
   flex-direction: row;
   margin: 0 auto;
-  border: solid;
-  border-color: yellow;
-  background-color: red;
-  padding: 10px;
+  color:whitesmoke;
+  font-size: 1cm;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   margin-bottom: 1cm;
 }
+
 /* Footer */
 footer{
   padding: 20px;
