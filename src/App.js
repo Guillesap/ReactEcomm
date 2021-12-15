@@ -18,8 +18,8 @@ return(
     <Saludo/>
     <Peliculas/>
     <MyButton label ="Estrenos Onlines"/>
-    <MyButton label ="Vhs Clasicos"/>
-    <MyButton label ="Ofertas"/>
+    <MyButton label ="Peliculas Clasicas"/>
+    <MyButton label ="Ofertas en VHS"/>
     <Footer data ={footerData}/>
 </>
 )
