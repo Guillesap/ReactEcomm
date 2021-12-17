@@ -1,7 +1,7 @@
 * {
   margin:0;
   box-sizing: border-box;
-  background-color: rgb(20, 20, 20);
+  background-color: rgb(70, 67, 67);
 }
 
 /*Navbar*/
@@ -97,4 +97,13 @@ footer p{
   font-size: 0.5cm;
   color:azure;
   background-color: rgb(82, 80, 80);
+}
+
+/*Contador*/
+#cOntador {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  color: aliceblue;
+  margin-left: 5cm;
 }

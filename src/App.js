@@ -3,6 +3,10 @@ import Navbar from "./components/Navbar/Navbar";
 import Peliculas from "./components/Peliculas/Peliculas";
 import Saludo from "./greeting";
 import MyButton from "./button";
+import Contador from './container/Contador';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 
 
 function App() {
@@ -17,6 +21,7 @@ return(
     <h1 id="tItulo"> Streaming y Venta de VHS para los nostálgicos.</h1>
     <Saludo/>
     <Peliculas/>
+    <Contador stock={10 } initial={1}/>
     <MyButton label ="Estrenos Onlines"/>
     <MyButton label ="Peliculas Clasicas"/>
     <MyButton label ="Ofertas en VHS"/>
