@@ -102,8 +102,12 @@ footer p{
 /*Contador*/
 #cOntador {
   display: flex;
-  flex-direction: row;
-  align-content: center;
-  color: aliceblue;
-  margin-left: 5cm;
+  flex-direction: column;
+  text-align: center;
+  width:  400px;
+  margin: 0 auto;
+  color:whitesmoke;
+  font-size: 1cm;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 80px;
 }

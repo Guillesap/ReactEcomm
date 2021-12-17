@@ -19,6 +19,7 @@ const contador = ( { stock, initial, onAdd } ) => {
 
   return (
     <div id="cOntador">
+        <h2>Cuantos Vhs deseas adquirir?</h2>
       <button onClick={() => restar()} >-</button>
       <p>{contador}</p>
       <button onClick={() => sumar()} >+</button>
