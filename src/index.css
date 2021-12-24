@@ -84,6 +84,7 @@ img {
   font-size: 1cm;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   margin-bottom: 1cm;
+  
 }
 
 /* Footer */
@@ -113,7 +114,8 @@ footer p{
   color:whitesmoke;
   font-size: 1cm;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  padding: 80px;
+  padding: 50px;
+  margin-top: 1px;
 }
 
 /*fotos vhs*/
