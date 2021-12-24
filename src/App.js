@@ -4,8 +4,10 @@ import Navbar from "./components/Navbar";
 import Peliculas from "./components/Peliculas";
 import Saludo from "./greeting";
 import MyButton from "./button";
-import Contador from './container/Contador';
+import Contador from './ItemListContainer/Contador';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import List from './ItemListContainer/List.js';
+
 
 
 
@@ -21,6 +23,8 @@ return(
     <h1 id="tItulo"> Streaming  y Venta de VHS para los nostálgicos.</h1>
     <Saludo/>
     <Peliculas/>
+    <h2>Nuestro Video recomendado</h2>
+    <List/>
     <Contador stock={10 } initial={1}/>
     <MyButton label ="Estrenos Onlines"/>
     <MyButton label ="Peliculas Clasicas"/>

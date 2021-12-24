@@ -54,6 +54,10 @@ h2 {
   color:rgb(240, 235, 233);
   text-align: center;
 }
+h3 {
+  color: red;
+  text-align: center;
+}
 /*Películas*/
 
 #tItulo{
@@ -110,4 +114,11 @@ footer p{
   font-size: 1cm;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   padding: 80px;
+}
+
+/*fotos vhs*/
+#vHs {
+  display: flex;
+  flex-direction: column;
+  color: red;
 }

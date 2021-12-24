@@ -1,12 +1,13 @@
 import React from 'react'
-import Item from './component/Item'
+import Item from '../components/Item'
 
 const List = () => {
 
   const obj = {
-    name: 'Tomás',
-    rol: 'estudiante'
+    nombre: 'Scream',
+    precio: '$ 2500',
   }
+ 
 
 
   return (

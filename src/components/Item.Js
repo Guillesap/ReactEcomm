@@ -3,9 +3,10 @@ import React from 'react'
 const Item = ( { elemento } ) => {
   console.log(elemento);
   return (
-    <div>
-      <h3>{elemento.name}</h3>
-      <p>{elemento.rol}</p>
+    <div id="vHs">
+      <h2>{elemento.nombre}</h2>
+      <h3>{elemento.precio}</h3>
+      <h2> <img src="/foto4scream.jpg" alt=""/></h2>
     </div>
   )
 }
