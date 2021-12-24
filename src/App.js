@@ -23,7 +23,7 @@ return(
     <h1 id="tItulo"> Streaming  y Venta de VHS para los nostálgicos.</h1>
     <Saludo/>
     <Peliculas/>
-    <h2>Nuestro Video recomendado</h2>
+    <h2>Nuestro Video recomendado de la Semana:</h2>
     <List/>
     <Contador stock={10 } initial={1}/>
     <MyButton label ="Estrenos Onlines"/>
