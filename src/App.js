@@ -1,3 +1,4 @@
+import { useState,useEffect} from 'react';
 import './index.js';
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
@@ -7,8 +8,7 @@ import MyButton from "./button";
 import Contador from './ItemListContainer/Contador';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import List from './ItemListContainer/List.js';
-
-
+import React from 'react';
 
 
 function App() {
@@ -16,6 +16,13 @@ function App() {
         copyright :"Copyright© 2021",
         author: "Willy Sapag"
     }
+
+const [estado ] = useState(false);
+console.log(estado);
+
+useEffect (() => {
+    console.log("Se ejecuta en cada actualización");
+})
 
 return(
 <>
