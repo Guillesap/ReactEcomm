@@ -47,7 +47,8 @@ const ItemListContainer = ({ greeting }) => {
 
     const onAdd = () => { }
     return (
-    <div>
+    <div id="ventaVhs">
+    <h1>Vhs Recomendados del mes</h1>
     {productos.map ( (item, idx)=> (
         <li key={idx}>
         Nombre: {item.nombre}  Precio: {item.precio}   Stock:  {item.stock}
