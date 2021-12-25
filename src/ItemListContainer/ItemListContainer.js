@@ -4,11 +4,13 @@ import ItemCount from "./ItemCount"
 
 
 const productosIniciales = [
-    { id : 1 , nombre : "Producto 1" , stock : 5 },
-    { id : 2 , nombre : "Producto 2" , stock : 5 },
-    { id : 3 , nombre : "Producto 3" , stock : 5 },
-    { id : 4 , nombre : "Producto 4" , stock : 5 },
-    { id : 5 , nombre : "Producto 5" , stock : 5 }
+    { nombre : "Scream" , precio: 2500, stock : 5 },
+    { nombre : "Pesadilla" , precio: 2000, stock : 10 },
+    { nombre : "El Cubo" , precio: 2500, stock : 6 },
+    { nombre : "Se lo que hicieron el Verano Pasado" , precio: 2500, stock : 2 },
+    { nombre : "Hellraiser" , precio: 2500, stock : 4 },
+    { nombre : "Viernes 13" , precio: 2500, stock : 10 }
+
 ]
 
 
@@ -44,24 +46,19 @@ const ItemListContainer = ({ greeting }) => {
 
 
     const onAdd = () => { }
-
-    if(loading){
-        return (
-            <div>
-                {greeting}!
-                <p>Cargando...</p>
-                <ItemCount initial={1} stock={5} onAdd={onAdd} />
-            </div>
-        )
-    }else{
-        return (
-            <div>
-                {greeting}!
-                <ItemCount initial={1} stock={5} onAdd={onAdd} />
-            </div>
-        )
-    }
+    return (
+    <div>
+    {productos.map ( (item, idx)=> (
+        <li key={idx}>
+        Nombre: {item.nombre}  Precio: {item.precio}   Stock:  {item.stock}
+        </li>
+    )
+    ) }    
+    </div>
+    )
 }
+
+
 
 export default ItemListContainer
 
