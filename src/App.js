@@ -10,6 +10,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import List from './ItemListContainer/List.js';
 import React from 'react';
 import ItemListContainer from './ItemListContainer/ItemListContainer.js';
+import ItemDetail from './ItemListContainer/ItemDetail.js'
 
 
 function App() {
@@ -44,6 +45,7 @@ return(
     <Saludo/>
     <Peliculas/>
     <ItemListContainer greeting={"Gracias por ingresar a nuestro Site!"} initial={1} stock={5}/>
+    <ItemDetail/>
     <h2>Nuestro Video recomendado de la Semana:</h2>
     <List/>
     <Contador stock={10 } initial={1}/>

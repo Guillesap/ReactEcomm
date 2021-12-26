@@ -1,4 +1,5 @@
 import React from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Item = ( { elemento } ) => {
   console.log(elemento);
@@ -12,7 +13,9 @@ const Item = ( { elemento } ) => {
       <h5>Stock disponible: {elemento.stock}</h5>
       <h5><button>COMPRAR</button></h5>
     </div>
+    
   )
 }
+
 
 export default Item
