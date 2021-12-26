@@ -6,8 +6,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const productosIniciales = [
     { nombre : "It" , foto: <img src="/fotoit.jpg" alt=""/>},
-    { nombre : "El Resplandor", foto:<img src="/theshining.jpg" alt=""/>} ,
+    { nombre : "The Shining", foto:<img src="/theshining.jpg" alt=""/>} ,
     { nombre : "Misery" , foto: <img src="/fotomisery.jpg" alt=""/>},
+    { nombre : "The Crow" , foto: <img src="/fotocrow.jpg" alt=""/>},
+    { nombre : "Alien", foto:<img src="/fotoalien.jpg" alt=""/>} ,
+    { nombre : "The Thing" , foto: <img src="/fotothing.jpg" alt=""/>}
 
 ]
 
@@ -39,8 +42,7 @@ const ItemListContainer = ({ greeting }) => {
 
     const onAdd = () => { }
     return (
-    <div id="ventaVhs">
-    <h1>Vhs Recomendados del mes</h1>
+    <div id="recomendadosVhs">
     {productos.map ( (item, idx)=> (
         <ul>
         <li key={idx}>

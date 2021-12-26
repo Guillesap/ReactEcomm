@@ -55,6 +55,11 @@ body {
   padding: 1cm;
 }
 
+h1 {
+  color:rgb(231, 230, 240);
+  text-align: center;
+}
+
 h2 {
   color:rgb(17, 11, 99);
   text-align: center;
@@ -163,4 +168,21 @@ footer p{
   font-size: 20px;
 }
 
+#recomendadosVhs {
+  display: flex;
+  flex-direction: row;
+  margin-left: 2cm;
+  
+}
+
+
+#recomendadosVhs li{
+  display: inline-block;
+  color:rgb(157, 158, 153);
+  text-align: center;
+  list-style: none;
+  font-size: 25px;
+  padding: 1mm; 
+  
+}
 
