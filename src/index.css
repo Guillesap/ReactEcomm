@@ -45,18 +45,18 @@ body {
   background-color: rgb(22, 22, 21);
 }
 #elMenu li p:hover {
-  color:rgb(203, 203, 216);
+  color:rgb(223, 226, 9);
   border-color: rgb(18, 19, 18);
   background-color: rgb(22, 22, 21);
 }
 #tItulo{
-  color: rgb(245, 240, 240);
+  color: rgb(165, 199, 15);
   text-align: center;
   padding: 1cm;
 }
 
 h1 {
-  color:rgb(231, 230, 240);
+  color:rgb(233, 236, 9);
   text-align: center;
 }
 
