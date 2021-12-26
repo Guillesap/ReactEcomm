@@ -42,8 +42,8 @@ return(
     <Navbar titulo ="Video Club Willy"/>
     <h1 id="tItulo"> Streaming  y Venta de VHS para los nostálgicos.</h1>
     <Saludo/>
-    <ItemListContainer greeting={"Gracias por ingresar a nuestro Site!"} initial={1} stock={5}/>
     <Peliculas/>
+    <ItemListContainer greeting={"Gracias por ingresar a nuestro Site!"} initial={1} stock={5}/>
     <h2>Nuestro Video recomendado de la Semana:</h2>
     <List/>
     <Contador stock={10 } initial={1}/>
