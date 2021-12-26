@@ -10,10 +10,8 @@ const productosIniciales = [
     { nombre : "Misery" , foto: <img src="/fotomisery.jpg" alt=""/>},
     { nombre : "The Crow" , foto: <img src="/fotocrow.jpg" alt=""/>},
     { nombre : "Alien", foto:<img src="/fotoalien.jpg" alt=""/>} ,
-    { nombre : "The Thing" , foto: <img src="/fotothing.jpg" alt=""/>}
-
+    { nombre : "The Thing" , foto: <img src="/fotothing.jpg" alt=""/>},
 ]
-
 
 const ItemListContainer = ({ greeting }) => {
 

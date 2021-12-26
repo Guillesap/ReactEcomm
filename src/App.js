@@ -9,6 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import ItemListContainer from './ItemListContainer/ItemListContainer.js';
 import ItemDetail from './ItemListContainer/ItemDetail.js'
+import ItemEstrenos from './ItemListContainer/ItemEstrenos.js';
 
 
 
@@ -43,8 +44,10 @@ return(
     <h1 id="tItulo"> Streaming  y Venta de VHS/DVD para los nostálgicos.</h1>
     <Saludo/>
     <Peliculas/>
-    <h1>Nuestros videos de Culto</h1>
+    <h1>Nuestras películas de Culto</h1>
     <ItemListContainer greeting={"Gracias por ingresar a nuestro Site!"} initial={1} stock={5}/>
+    <h1>Estrenos 2021</h1>
+    <ItemEstrenos/>
     <ItemDetail/>
     <MyButton label ="Peliculas Clasicas"/>
     <MyButton label ="Ofertas en VHS"/>
