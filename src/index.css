@@ -210,7 +210,7 @@ footer p{
   margin: 0 auto;
   
 }
-img {
+#michael img{
   display: flex;
   flex-direction: column;
   margin: 0 auto;

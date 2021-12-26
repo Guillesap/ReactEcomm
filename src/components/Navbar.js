@@ -8,10 +8,10 @@ const Navbar = () => {
                     INICIO
                 </li>
                 <li>
-                   ESTRENOS
+                   CLÁSICOS
                 </li>
                 <li>
-                    CLASICOS
+                    TIENDA
                 </li>
                 <li>
                     CONTACTO
