@@ -47,7 +47,7 @@ function ItemDetail() {
                     <li key={idx}>
                         <h2> {item.nombre}</h2>
                         <h2> {item.foto}</h2>
-                        <h3>Precio: $ {item.precio} </h3>
+                        <h4>Precio: $ {item.precio} </h4>
                         <h4>Stock: {item.stock}</h4>
                         <h5>Info: {item.info}</h5>
                         <Contador stock={10} initial={1} />
