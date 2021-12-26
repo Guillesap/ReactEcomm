@@ -4,12 +4,12 @@ import ItemCount from "./ItemCount"
 
 
 const productosIniciales = [
-    { nombre : "Scream" , precio: 2500, stock : 5 },
-    { nombre : "Pesadilla" , precio: 2000, stock : 10 },
-    { nombre : "El Cubo" , precio: 2500, stock : 6 },
-    { nombre : "Se lo que hicieron el Verano Pasado" , precio: 2500, stock : 2 },
-    { nombre : "Hellraiser" , precio: 2500, stock : 4 },
-    { nombre : "Viernes 13" , precio: 2500, stock : 10 }
+    { nombre : "Scream" , foto: <img src="/foto4scream.jpg" alt=""/>, precio: 2500, stock : 10, info: "120 minutos. Año 1990" },
+    { nombre : "Pesadilla", foto:<img src="/foto3pesadilla.jpg" alt=""/> , precio: 2200, stock : 10, info: "110 minutos. Año 1988" },
+    { nombre : "El Cubo",foto:<img src="/foto1cubo.jpg" alt=""/> , precio: 2750, stock : 1, info: "105 minutos. Año 1996" },
+    { nombre : "Se lo que hicieron " , foto:<img src="/foto6seloque.jpg" alt=""/>, precio: 2500, stock : 2, info: "125 minutos. Año 1995" },
+    { nombre : "Hellraiser" , foto: <img src="/foto2hell.jpg" alt=""/>, precio: 3100, stock : 2, info: "130 minutos. Año 1998" },
+    { nombre : "Viernes 13" ,foto:<img src="/foto5viernes.jpg" alt=""/>, precio: 1900, stock : 10, info: "117 minutos. Año 1988" }
 
 ]
 
@@ -20,18 +20,13 @@ const ItemListContainer = ({ greeting }) => {
     const [loading, setLoading] = useState(true)
     
     useEffect(() => {
-        //console.log("Soy un efecto")
-        //Aca haria un pedido a una API REST / o DB 
-        //consigo un resultado / archivo
-        //modifico el estado
+
         
         const promesa = new Promise((res)=>{
-            //rej() //rejected
             setTimeout(()=>{
                 console.log("Soy el timeout")
-                //setLoading(false)
-                res(productosIniciales) //resolve - fulfilled
-            },5000)
+                res(productosIniciales) 
+            },2000)
         })
         
         promesa.then((productos)=>{
@@ -40,8 +35,7 @@ const ItemListContainer = ({ greeting }) => {
             setLoading(false)
             setProductos(productos)
         })
-        //promesa.catch(()=>{})
-        //const resultado = fetch()
+
     },[])
 
 
@@ -50,9 +44,15 @@ const ItemListContainer = ({ greeting }) => {
     <div id="ventaVhs">
     <h1>Vhs Recomendados del mes</h1>
     {productos.map ( (item, idx)=> (
+        <ul>
         <li key={idx}>
-        Nombre: {item.nombre}  Precio: {item.precio}   Stock:  {item.stock}
+        <h2> Nombre: {item.nombre}</h2>
+        <h2> {item.foto}</h2>
+        <h3>Precio: $ {item.precio} </h3>
+        <h4>Stock:  {item.stock}</h4>
+        <h5>Info: {item.info}</h5>
         </li>
+        </ul>
     )
     ) }    
     </div>

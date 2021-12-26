@@ -154,6 +154,8 @@ footer p{
 }
 
 #ventaVhs li{
+  display: flex;
+  flex-direction: column;
   color:rgb(157, 158, 153);
   text-align: center;
   list-style: none;
