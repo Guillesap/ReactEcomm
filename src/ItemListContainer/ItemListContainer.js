@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import { useEffect , useState } from "react"
 import ItemCount from "./ItemCount"
+import Contador from "./Contador"
 
 
 const productosIniciales = [
@@ -51,6 +52,8 @@ const ItemListContainer = ({ greeting }) => {
         <h3>Precio: $ {item.precio} </h3>
         <h4>Stock:  {item.stock}</h4>
         <h5>Info: {item.info}</h5>
+        <Contador stock={10 } initial={1}/>
+        <h5><button>Agregar al Carrito</button></h5>
         </li>
         </ul>
     )

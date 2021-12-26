@@ -134,12 +134,12 @@ footer p{
   display: flex;
   flex-direction: column;
   text-align: center;
-  width:  400px;
+  width:  200px;
   margin: 0 auto;
   color:whitesmoke;
-  font-size: 1cm;
+  font-size: 0.5cm;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  padding: 50px;
+  padding: 20px;
   margin-top: 1px;
 }
 #ventaVhs {
