@@ -27,7 +27,7 @@ const ItemListContainer = ({ greeting }) => {
             setTimeout(()=>{
                 console.log("Soy el timeout")
                 res(productosIniciales) 
-            },2000)
+            },1000)
         })
         
         promesa.then((productos)=>{
