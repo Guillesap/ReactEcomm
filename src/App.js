@@ -40,7 +40,7 @@ useEffect (() => {
 return(
 <>
     <Navbar titulo ="Video Club Willy"/>
-    <h1 id="tItulo"> Streaming  y Venta de VHS para los nostálgicos.</h1>
+    <h1 id="tItulo"> Streaming  y Venta de VHS/DVD para los nostálgicos.</h1>
     <Saludo/>
     <Peliculas/>
     <h1>Nuestros videos de Culto</h1>
