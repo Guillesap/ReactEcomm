@@ -5,12 +5,11 @@ import Navbar from "./components/Navbar";
 import Peliculas from "./components/Peliculas";
 import Saludo from "./greeting";
 import MyButton from "./button";
-import Contador from './ItemListContainer/Contador';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import List from './ItemListContainer/List.js';
 import React from 'react';
 import ItemListContainer from './ItemListContainer/ItemListContainer.js';
 import ItemDetail from './ItemListContainer/ItemDetail.js'
+
 
 
 function App() {
@@ -47,10 +46,6 @@ return(
     <h1>Nuestros videos de Culto</h1>
     <ItemListContainer greeting={"Gracias por ingresar a nuestro Site!"} initial={1} stock={5}/>
     <ItemDetail/>
-    <h2>Nuestro Video recomendado de la Semana:</h2>
-    <List/>
-    <Contador stock={10 } initial={1}/>
-    <MyButton label ="Estrenos Onlines"/>
     <MyButton label ="Peliculas Clasicas"/>
     <MyButton label ="Ofertas en VHS"/>
     <Footer data ={footerData}/>

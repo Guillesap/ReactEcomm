@@ -186,3 +186,33 @@ footer p{
   
 }
 
+/*media queries----------------------------------------------*/
+
+@media (max-width:1450px) {
+
+  #recomendadosVhs {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
+  margin-left: 2cm;
+  
+}
+
+
+#recomendadosVhs li{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  list-style: none;
+  font-size: 25px;
+  padding: 1mm; 
+  margin: 0 auto;
+  
+}
+img {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+}
