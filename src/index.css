@@ -196,6 +196,11 @@ footer p{
   padding: 1mm; 
   
 }
+img {
+  border: solid;
+  border-color: rgb(245, 245, 242);
+  padding: 1px;
+}
 
 /*media queries----------------------------------------------*/
 
@@ -206,7 +211,6 @@ footer p{
   flex-direction: column;
   text-align: center;
   margin: 0 auto;
-  margin-left: 2cm;
   
 }
 
@@ -221,9 +225,11 @@ footer p{
   margin: 0 auto;
   
 }
-#michael img{
+img {
   display: flex;
   flex-direction: column;
+  border: solid;
+  border-color: rgb(248, 10, 10);
   margin: 0 auto;
 }
 }
