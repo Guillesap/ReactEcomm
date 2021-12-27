@@ -13,6 +13,8 @@ const peliculas = [
 
 ]
 
+const newPeliculas = peliculas.filter((peliculas)=> peliculas.nombre=== "Hellraiser" );
+
 
 function ItemDetail() {
 
@@ -38,11 +40,11 @@ function ItemDetail() {
     }, [])
 
 
-    const getItem = () => { }
+    const DetailItem = () => { }
     return (
         <div id="ventaVhs">
             <h1>Compra tu DVD favorito</h1>
-            {productos.map((item, idx) => (
+            {newPeliculas.map((item, idx) => (
                 <ul>
                     <li key={idx}>
                         <h2> {item.nombre}</h2>
@@ -62,4 +64,6 @@ function ItemDetail() {
 }
 
 export default ItemDetail
+
+
 
