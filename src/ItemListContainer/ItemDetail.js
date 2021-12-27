@@ -43,7 +43,7 @@ function ItemDetail() {
     const DetailItem = () => { }
     return (
         <div id="ventaVhs">
-            <h1>Compra tu DVD favorito</h1>
+            <h1>Compra tu DVD favorito. El recomendado es:</h1>
             {newPeliculas.map((item, idx) => (
                 <ul>
                     <li key={idx}>
