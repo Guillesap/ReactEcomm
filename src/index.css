@@ -1,7 +1,8 @@
+
 * {
   margin:0;
   box-sizing: border-box;
-  background-color: rgb(75, 74, 74);
+  background-color: rgb(27, 23, 23);
 }
 
 /*Navbar*/
@@ -11,9 +12,10 @@ body {
 }
 
 #elMenu {
+  background-color: rgb(24, 6, 41);
   display: flex;
   flex-direction: row;
-  padding: 10mm;
+  padding: 4mm;
   border: solid;
   border-color: white;
 }
@@ -23,7 +25,7 @@ body {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 1cm;
   margin: 0.5cm;
- 
+  background-color: rgb(24, 6, 41);
 }
 
 #elMenu li {
@@ -32,17 +34,22 @@ body {
   justify-content: center;
   display: inline-block;
   border: solid;
-  border-color: rgb(208, 230, 12);
+  border-color: rgb(214, 10, 10);
   margin: 1.1cm;
-  background-color: rgb(211, 21, 14);
+  background-color: rgb(20, 19, 19);
   padding: 4mm;
   color:honeydew; 
 }
 
+#elMenu ul {
+  background-color: rgb(24, 6, 41);
+  padding: 1px;
+  }
+
 #elMenu li:hover {
-  color:rgb(203, 203, 216);
-  border-color: rgb(65, 235, 59);
-  background-color: rgb(22, 22, 21);
+  color:rgb(228, 37, 11);
+  border-color: rgb(24, 2, 83);
+  background-color: rgb(223, 223, 215);
 }
 #elMenu li p:hover {
   color:rgb(223, 226, 9);
@@ -71,7 +78,7 @@ h3 {
 }
 
 h4 {
-  color:rgb(17, 11, 99);
+  color:rgb(230, 229, 238);
   text-align: center;
 }
 
@@ -128,22 +135,6 @@ img {
   
 }
 
-/* Footer */
-footer{
-  padding: 20px;
-  text-align: center;
-  font-size: 1cm;
-  color:azure;
-  background-color: rgb(24, 6, 41);
-}
-
-footer p{
-  padding: 20px;
-  text-align: center;
-  font-size: 0.5cm;
-  color:azure;
-  background-color: rgb(24, 6, 41);
-}
 
 /*Contador*/
 #cOntador {
@@ -169,6 +160,16 @@ footer p{
   text-align: center;
 }
 
+#ventaVhs h4{
+  color:rgb(208, 255, 0);
+  text-align: center;
+}
+
+#ventaVhs button{
+  color:rgb(240, 85, 13);
+  text-align: center;
+}
+
 #ventaVhs li{
   display: flex;
   flex-direction:column;
@@ -186,7 +187,6 @@ footer p{
   
 }
 
-
 #recomendadosVhs li{
   display: inline-block;
   color:rgb(157, 158, 153);
@@ -200,6 +200,40 @@ img {
   border: solid;
   border-color: rgb(245, 245, 242);
   padding: 1px;
+}
+
+/*Contacto*/
+
+#elContacto  {
+ text-align: center;
+ list-style: none;
+ color: aliceblue;
+}
+
+#elContacto li {
+  display: inline-block;
+  flex-direction: column;
+  font-size: 25px;
+  padding: 10mm; 
+  margin: 0 auto;
+  color: aliceblue;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Footer */
+footer{
+  padding: 20px;
+  text-align: center;
+  font-size: 1cm;
+  color:azure;
+  background-color: rgb(24, 6, 41);
+}
+
+footer p{
+  padding: 20px;
+  text-align: center;
+  font-size: 0.5cm;
+  color:azure;
+  background-color: rgb(24, 6, 41);
 }
 
 /*media queries----------------------------------------------*/

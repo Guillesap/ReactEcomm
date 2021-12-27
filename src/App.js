@@ -10,6 +10,7 @@ import React from 'react';
 import ItemListContainer from './ItemListContainer/ItemListContainer.js';
 import ItemDetail from './ItemListContainer/ItemDetail.js'
 import ItemEstrenos from './ItemListContainer/ItemEstrenos.js';
+import Contacto from './components/Contacto.js';
 
 
 
@@ -51,6 +52,7 @@ return(
     <ItemDetail/>
     <MyButton label ="Peliculas Clasicas"/>
     <MyButton label ="Ofertas en VHS"/>
+    <Contacto/>
     <Footer data ={footerData}/>
 </>
 )
