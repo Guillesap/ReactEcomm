@@ -1,61 +1,32 @@
-import { useState,useEffect} from 'react';
-import './index.js';
-import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
-import Peliculas from "./components/Peliculas";
-import Saludo from "./greeting";
-import MyButton from "./button";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import React from 'react';
-import ItemListContainer from './ItemListContainer/ItemListContainer.js';
-import ItemDetail from './ItemListContainer/ItemDetail.js'
-import ItemEstrenos from './ItemListContainer/ItemEstrenos.js';
-import Contacto from './components/Contacto.js';
-
+import Header from './Header'
+import Footer from "./Footer"
+import Main from './Main'
+import { BrowserRouter } from "react-router-dom"
+import { useEffect, useState } from 'react'
 
 
 function App() {
 
-
+    const titulo = "Video Online"
     const footerData = {
-        copyright :"Copyright© 2021",
-        author: "Willy Sapag"
+        copyright: "Copyright © 2022",
+        author: "Willy S"
     }
-
-const [estado ] = useState(false);
-console.log(estado);
-
-useEffect (() => {
-    console.log("Aca está el efecto");
-
-    setTimeout (()=>{
-        console.log("Se activa");
-    },2000)
-    setInterval(() => {
-        console.log("Aqui tenes el intervalo");
-    }, 8000);
-    
-})
+    const home_titulo = "Home"
+    const array = ["Home", "Clásicos", "Terror"]
 
 
+    const [show, setShow] = useState(false)
 
-return(
-<>
-    <Navbar titulo ="Video Club Willy"/>
-    <h1 id="tItulo"> Streaming  y Venta de VHS/DVD para los nostálgicos.</h1>
-    <Saludo/>
-    <Peliculas/>
-    <h1>Nuestras películas de Culto</h1>
-    <ItemListContainer greeting={"Gracias por ingresar a nuestro Site!"} initial={1} stock={5}/>
-    <h1>Estrenos 2021</h1>
-    <ItemEstrenos/>
-    <ItemDetail/>
-    <MyButton label ="Peliculas Clasicas"/>
-    <MyButton label ="Ofertas en VHS"/>
-    <Contacto/>
-    <Footer data ={footerData}/>
-</>
-)
+    return (
+        <BrowserRouter>
+            <Header titulo={titulo} links={array} />
+            <h1>Bienvenidos VHS Online VideoClub!</h1>
+            <h2>Nuestros recomendados del mes</h2>
+            <Main titulo={home_titulo} />
+            <Footer data={footerData} links={array} />
+        </BrowserRouter>
+    )
 }
 
-export default App;
+export default App
