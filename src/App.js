@@ -3,6 +3,7 @@ import Footer from "./Footer"
 import Main from './Main'
 import { BrowserRouter } from "react-router-dom"
 import { useEffect, useState } from 'react'
+import Contacto from './Contacto'
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
             <h1>Bienvenidos VHS Online VideoClub!</h1>
             <h2>Nuestros recomendados del mes</h2>
             <Main titulo={home_titulo} />
+            <Contacto/>
             <Footer data={footerData} links={array} />
         </BrowserRouter>
     )
