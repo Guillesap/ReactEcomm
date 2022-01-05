@@ -68,7 +68,21 @@ footer {
     font-size: 25px;
 }
 
-
+#dEtail {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    img {
+        display: flex;
+        flex-direction: row;
+        width: 5cm;
+        margin: 0 auto;
+    }
+    button {
+        width: 100px;
+        margin: 0 auto;
+    }
+}
 
 #listado-productos {
     display: flex;

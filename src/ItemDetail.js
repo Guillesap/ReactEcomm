@@ -5,17 +5,17 @@ import ItemCount from "./ItemCount"
 
 const ItemDetail  = ({item}) => {
     return (
-        <div>
+        <section id="dEtail">
             <h3>Detalle de la pelicula seleccionada:</h3>
             <img src={item.foto}/>
-            <p>Nombre:{item.nombre}</p>
-            <p>Precio:$ {item.precio}</p>
-            <p>Detalle:{item.info}</p>
-            <p>Stock: {item.stock}</p>
-
+            <h1>Título:{item.nombre}</h1>
+            <h2>Precio:$ {item.precio}</h2>
+            <h3>Detalle:{item.info}</h3>
+            <h4>Stock: {item.stock}</h4>
             <ItemCount stock= {item.stock} initial={0}/>
+            <button>COMPRAR</button>
 
-        </div>
+        </section>
     )
 }
 
