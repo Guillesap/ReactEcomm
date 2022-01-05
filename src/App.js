@@ -14,7 +14,7 @@ function App() {
         author: "Willy S"
     }
     const home_titulo = "Home"
-    const array = ["Home", "Clásicos", "Terror"]
+    const array = ["Inicio","Clásicos", "Terror"]
 
 
     const [show, setShow] = useState(false)
