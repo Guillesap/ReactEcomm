@@ -3,7 +3,7 @@ import { useEffect, useState } from "react"
 import ItemDetail from "./ItemDetail"
 
 
-const detalle= { nombre : "Scream" , foto: "/foto4scream.jpg", precio: 2500, stock : 10, info: "120 minutos. Año 1990" }
+const detalle= { nombre : "Scream 2" , foto: "/foto4scream.jpg", precio:  2500, stock : 10, info: "120 minutos. Año 1990" }
 
 
 const ItemDetailContainer = () => {

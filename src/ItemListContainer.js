@@ -23,16 +23,16 @@ const ItemListContainer = ({ titulo }) => {
         const promesa = new Promise((res, rej) => {
             setTimeout(() => {
                 res(productos)
-            }, 2000)
+            }, 1000)
         })
 
         promesa
             .then((lista) => {
-                console.log("Funciona")
+                console.log("Funcionamiento correcto")
                 setLista(lista)
             })
             .catch(() => {
-                console.log("No funciona")
+                console.log("Error en el funcionamiento")
             })
 
     }, [])
