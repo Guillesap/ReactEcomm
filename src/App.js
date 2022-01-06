@@ -1,34 +1,25 @@
-import Header from './Header'
-import Footer from "./Footer"
-import Main from './Main'
+import  React  from "react";
+import "./estilo.css"
 import { BrowserRouter } from "react-router-dom"
-import { useEffect, useState } from 'react'
-import Contacto from './Contacto'
+
+import Header from "./components/Header";
+import Main from "./components/Main";
+import Footer from "./components/Footer";
+import Contacto from "./components/Contacto";
 
 
-function App() {
-
-    const titulo = "Video Online"
-    const footerData = {
-        copyright: "Copyright © 2022",
-        author: "Willy S"
-    }
-    const home_titulo = "Home"
-    const array = ["Inicio","Clásicos", "Terror"]
-
-
-    const [show, setShow] = useState(false)
+function App(){
 
     return (
         <BrowserRouter>
-            <Header titulo={titulo} links={array} />
+            <Header />
             <h1>Bienvenidos VHS Online VideoClub!</h1>
             <h2>Nuestros recomendados del mes</h2>
-            <Main titulo={home_titulo} />
+            <Main />
             <Contacto/>
-            <Footer data={footerData} links={array} />
+            <Footer /> 
         </BrowserRouter>
-    )
+    )     
 }
-
 export default App
+
