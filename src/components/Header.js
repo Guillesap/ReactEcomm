@@ -7,7 +7,7 @@ function Header(){
     return (
         <header>
             <Link to ="/">
-                <img src="../img/logovhs.png" alt="logo" width={300} ></img>
+                <img src="../img/logovhs.png" alt="logo" width={200} ></img>
             </Link>
             <NavBar /> 
         </header>

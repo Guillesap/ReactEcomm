@@ -38,15 +38,26 @@ footer {
   }
 
 .navbar{
-    background-color: #bd0a0a;
+    background-color:#bd0a0a;
+    margin:0 auto;
+    height: 100px;
 }
 
-.navbar a {
-        margin-left: 1rem;
-        text-align: center;
-    
+.navbar ul {
+margin:0 auto;
+font-size: 25px;
+padding: 1px;  
+color: white;
 }
 
+.navbar li {
+    border: solid;
+    border-color: gold;
+    margin: 1cm;
+    height: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: oblique;
+}
 #elContacto  {
     text-align: center;
     list-style: none;
@@ -62,7 +73,6 @@ footer {
      color: aliceblue;
      font-family:Verdana, Geneva, Tahoma, sans-serif;
    }
-
 
 
   .box-contador{
@@ -86,8 +96,8 @@ main{
     grid-template-rows: 1fr 1fr;
     justify-items: center;
     align-items: center;
-    margin: 50px;
-    padding: 10px;
+    margin: 10px;
+    padding: 5px;
     
 }
 article{
@@ -99,13 +109,19 @@ article{
     align-items: center;
     border-radius: 10px;
     padding: 50px;
-
 }
+
+article img{
+    border:solid;
+    border-color: red;
+}
+
 button{
-    background-color: #d3340c;
+    background-color: #bd0a0a;
     border: solid;
-    border-color: #141414;
-    size: 1ex;
+    border-color: #e0e2d8;
+    size: 1cm;
+    width: 90px;
 
 }
 
@@ -122,3 +138,5 @@ button{
     white-space: nowrap;
     direction: ltr;
   }
+
+ 
