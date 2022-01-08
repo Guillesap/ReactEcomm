@@ -19,6 +19,7 @@ const detalle= [
 
 const ItemDetailContainer = () => {
     const [producto, setProducto]= useState ({})
+    const [added, setAdded] = useState(false);
     const { id } = useParams()
     console.log(id)
 
@@ -40,11 +41,13 @@ const ItemDetailContainer = () => {
                 })
         }
         
-
     }, [id])
+    const onAdd = (count) => {
+        console.log(`Agregaste 1 Vhs/DVD Titulo: ${producto.nombre},cantidad: ${count}.`); setAdded(true);
+      }
     return (
         <div>
-            <ItemDetail item={producto}/>
+            <ItemDetail item={producto} onAdd={onAdd} added={added}/>
         </div>
     )
 }

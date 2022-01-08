@@ -1,8 +1,8 @@
 import  React  from "react";
 
-function CardWidget(){
+function Cart(){
     return (
         <span className="material-icons">shopping_cart</span>
     )     
 }
-export default CardWidget
+export default Cart
