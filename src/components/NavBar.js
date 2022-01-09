@@ -23,7 +23,7 @@ const NavBar = () =>{
                         </li>  
                     </ul>
                     <div id="elCarrito">
-                    <h5><Cart/>Mi Carrito</h5> 
+                    <h5><Cart/>Carrito</h5> 
                     </div>
                     </div>
                 </div>

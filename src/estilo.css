@@ -11,18 +11,44 @@ a {
 
 html , body , #root {
     height: 100vh;
-    background-color: rgb(114, 116, 116);
+    background-color: rgb(16, 17, 17);
 }
 
 
 h1 {
-    color: rgb(231, 226, 225);
+    color: rgb(231, 226, 225);  
     text-align: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 60px;
 }
 
 h2 {
-    color: rgb(20, 20, 20);
+    color: rgb(184, 184, 176);
     text-align: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: oblique;
+}
+
+h3 {
+    color: rgb(247, 247, 242);
+    text-align: center;
+}
+
+h4 {
+    color: rgb(218, 218, 15);
+    text-align: center;
+}
+
+h5 {
+    color: rgb(218, 218, 15);
+    text-align: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: oblique;
+}
+
+
+p {
+    color: whitesmoke;
 }
 #elLogo img {
     display: flex;
@@ -50,7 +76,8 @@ h2 {
     border: solid;
     border-radius: 10%;
     border-color: rgb(229, 230, 228);
-    padding: 0.4px;
+    padding: 0.5px;
+    width: 130px;
 }
 #elCarrito h5 {
     color: rgb(244, 245, 239);
@@ -109,7 +136,8 @@ padding: 10px;
      padding: 10mm; 
      margin: 0 auto;
      color: aliceblue;
-     font-family:Verdana, Geneva, Tahoma, sans-serif;
+     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+     font-style: oblique;
    }
 
 
@@ -123,6 +151,7 @@ padding: 10px;
     text-align: center;
     margin: 0 auto;
     size: 10px;
+    color: rgb(240, 229, 229);
 }
 
   .p-contador{
@@ -184,6 +213,7 @@ button{
     word-wrap: normal;
     white-space: nowrap;
     direction: ltr;
+    color: whitesmoke;
   }
 
  

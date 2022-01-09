@@ -11,7 +11,7 @@ const peliculas= [
     {id: 6, stock: 7, nombre: "Wrong Turn", precio: 2500, img: "/img/NOVWRONG.jpg", categoria: "novedades"},
     {id: 7, stock: 11, nombre: "CountDown", precio: 2100, img: "/img/NOVLAHORA.jpg", categoria: "novedades"},
     {id: 8, stock: 7, nombre: "Conjuring", precio: 2700, img: "/img/NOVCONJURO.jpg", categoria: "novedades"},
-    {id: 9, stock: 10, nombre: "Scream2", precio: 2000, img: "/img/foto4scream.jpg", categoria: "clasicos"},
+    {id: 9, stock: 10, nombre: "Scream 2", precio: 2000, img: "/img/foto4scream.jpg", categoria: "clasicos"},
     {id: 10, stock: 8, nombre: "It", precio: 2500, img: "/img/fotoit.jpg", categoria: "clasicos"},
     {id: 11, stock: 10, nombre: "Misery", precio: 3000, img: "/img/fotomisery.jpg", categoria: "clasicos"},
     {id: 12, stock: 8, nombre: "The Thing", precio: 3500, img: "/img/fotothing.jpg", categoria: "clasicos"},
