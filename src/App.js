@@ -13,8 +13,8 @@ function App(){
     return (
         <BrowserRouter>
             <Header />
-            <h1>Bienvenidos VHS Online VideoClub!</h1>
-            <h2>Nuestros recomendados del mes</h2>
+            <h1>Bienvenidos a VHS "VideoClub de Terror"</h1>
+            <h2>Nuestro catálogo:</h2>
             <Main />
             <Contacto/>
             <Footer /> 
