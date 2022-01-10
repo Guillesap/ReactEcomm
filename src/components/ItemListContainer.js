@@ -18,7 +18,15 @@ const peliculas= [
     {id: 13, stock: 8, nombre: "The Crow", precio: 2100, img: "/img/fotocrow.jpg", categoria: "clasicos"},
     {id: 14, stock: 8, nombre: "The Cube", precio: 2200, img: "/img/foto1cubo.jpg", categoria: "clasicos"},
     {id: 15, stock: 8, nombre: "Friday 13th", precio: 3500, img: "/img/foto5viernes.jpg", categoria: "clasicos"},
-    {id: 16, stock: 8, nombre: "Saw", precio: 4000, img: "/img/foto0jigsaw.jpg", categoria: "clasicos"}
+    {id: 16, stock: 8, nombre: "Saw", precio: 4000, img: "/img/foto0jigsaw.jpg", categoria: "clasicos"},
+    {id: 17, stock: 10, nombre: " Blair Witch ", precio: 5000, img: "/img/PARABRUJA.jpg", categoria: "paranormal"},
+    {id: 18, stock: 8, nombre: "Grudge", precio: 3500, img: "/img/PARAGRUDGE.jpg", categoria: "paranormal"},
+    {id: 19, stock: 10, nombre: "insidius", precio: 3000, img: "/img/PARAINSIDIUS.jpg", categoria: "paranormal"},
+    {id: 20, stock: 8, nombre: "Ouija", precio: 3150, img: "/img/PARAOUIJA.jpg", categoria: "paranormal"},
+    {id: 21, stock: 8, nombre: "Paranormal", precio: 2100, img: "/img/PARAPARA.jpg", categoria: "paranormal"},
+    {id: 22, stock: 8, nombre: "Poltergeist", precio: 2200, img: "/img/PARAPOLTER.jpg", categoria: "paranormal"},
+    {id: 23, stock: 8, nombre: "Sinister", precio: 3700, img: "/img/PARASINISTER.jpg", categoria: "paranormal"},
+    {id: 24, stock: 8, nombre: "The Ring", precio: 4500, img: "/img/PARARING.jpg", categoria: "paranormal"}
 ]
 
 const ItemListContainer = ({ titulo }) => {
