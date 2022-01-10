@@ -26,7 +26,15 @@ const peliculas= [
     {id: 21, stock: 8, nombre: "Paranormal", precio: 2100, img: "/img/PARAPARA.jpg", categoria: "paranormal"},
     {id: 22, stock: 8, nombre: "Poltergeist", precio: 2200, img: "/img/PARAPOLTER.jpg", categoria: "paranormal"},
     {id: 23, stock: 8, nombre: "Sinister", precio: 3700, img: "/img/PARASINISTER.jpg", categoria: "paranormal"},
-    {id: 24, stock: 8, nombre: "The Ring", precio: 4500, img: "/img/PARARING.jpg", categoria: "paranormal"}
+    {id: 24, stock: 8, nombre: "The Ring", precio: 4500, img: "/img/PARARING.jpg", categoria: "paranormal"},
+    {id: 25, stock: 5, nombre: "Jason X", precio: 3000, img: "/img/SERIALJASONX.jpg", categoria: "serial"},
+    {id: 26, stock: 7, nombre: "Candyman", precio: 3000, img: "/img/SERIALCANDY.jpg", categoria: "serial"},
+    {id: 27, stock: 8, nombre: "Chucky", precio: 3000, img: "/img/SERIALCHUCKY.jpg", categoria: "serial"},
+    {id: 28, stock: 8, nombre: "Leatherface", precio: 3000, img: "/img/SERIALEATHERFACE.jpg", categoria: "serial"},
+    {id: 29, stock: 8, nombre: "Hannibal", precio: 3000, img: "/img/SERIALHANNIBAL.jpg", categoria: "serial"},
+    {id: 30, stock: 8, nombre: "Pesadilla Final", precio: 3000, img: "/img/SERIALFREDDY.jpg", categoria: "serial"},
+    {id: 31, stock: 8, nombre: "Slender Man", precio: 2500, img: "/img/SERIALSLENDERMAN.jpg", categoria: "serial"},
+    {id: 32, stock: 8, nombre: "Psicosis", precio: 4000, img: "/img/SERIALPSICOSIS.jpg", categoria: "serial"},
 ]
 
 const ItemListContainer = ({ titulo }) => {

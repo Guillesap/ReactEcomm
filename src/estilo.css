@@ -84,6 +84,31 @@ p {
     text-align: center;
 }
 
+#CardDetail {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    color: black;
+    border: solid;
+    border-color: red;
+}
+
+#CardDetail p {
+
+    color: black;
+}
+
+#CardDetail h3 {
+
+    color: black;
+}
+#CardDetail button {
+    margin: 0 auto;
+    color: black;
+}
+
 footer {
     padding: 1rem;
     background-color: rgb(255, 0, 0);
@@ -214,6 +239,25 @@ button{
     white-space: nowrap;
     direction: ltr;
     color: whitesmoke;
+    margin: 0 auto;
+    align-items: center;
   }
 
- 
+#cArt {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+#cArt .material-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    color:rgb(230, 225, 223);
+}
+#cArt h5{
+    color: rgb(219, 30, 17);
+    font-family: fantasy;
+    font-size: 1cm;
+}
