@@ -77,12 +77,23 @@ p {
     border-radius: 10%;
     border-color: rgb(229, 230, 228);
     padding: 0.5px;
-    width: 130px;
+    width: 150px;
 }
 #elCarrito h5 {
     color: rgb(244, 245, 239);
     text-align: center;
 }
+
+#elCarrito .material-icons{
+    display: flex;
+    flex-direction: column;
+    color: rgb(191, 224, 26);
+    text-align: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
 
 #CardDetail {
     display: flex;
@@ -97,16 +108,16 @@ p {
 
 #CardDetail p {
 
-    color: black;
+    color: rgb(245, 235, 235);
 }
 
 #CardDetail h3 {
 
-    color: black;
+    color: rgb(236, 230, 230);
 }
 #CardDetail button {
     margin: 0 auto;
-    color: black;
+    color: rgb(230, 199, 199);
 }
 
 footer {
@@ -129,7 +140,7 @@ footer p {
 .navbar{
     background-color:#bd0a0a;
     margin:0 auto;
-    height: 100px;
+    height: 150px;
 }
 
 .navbar ul {
@@ -164,6 +175,8 @@ padding: 10px;
      font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
      font-style: oblique;
    }
+
+
 
 
   .box-contador{
@@ -242,22 +255,3 @@ button{
     margin: 0 auto;
     align-items: center;
   }
-
-#cArt {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-}
-
-#cArt .material-icons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-    color:rgb(230, 225, 223);
-}
-#cArt h5{
-    color: rgb(219, 30, 17);
-    font-family: fantasy;
-    font-size: 1cm;
-}

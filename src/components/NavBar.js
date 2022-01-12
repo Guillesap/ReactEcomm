@@ -1,9 +1,13 @@
-import  React  from "react";
+import  React, { useContext }  from "react";
 import {Link} from "react-router-dom"
 import Cart from "./Cart.js"
+import { contexto } from "../CartContext.js";
 
 
 const NavBar = () =>{
+
+    const {cantidad_total} = useContext(contexto)
+
     return (
             <nav className="navbar navbar-expand-lg navbar-light ">
                 <div className="container-fluid">
@@ -28,12 +32,17 @@ const NavBar = () =>{
                         <Link className="nav-link" to ="/categoria/serial"><h2>Killers</h2></Link>
                         </li>  
                     </ul>
-                    <div id="elCarrito">
-                    <h5><Cart/>Carrito</h5> 
+                    <div id= "elCarrito">
+                    <Link to="/Cart">
+                    <span className="material-icons">shopping_cart
+                    </span>
+                    <h2>{cantidad_total}</h2>
+                    </Link>
                     </div>
                     </div>
                 </div>
             </nav>
+
         )
         
     
