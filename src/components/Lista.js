@@ -1,5 +1,5 @@
 import { memo } from "react"
-import Usuario from "./Usuario"
+import Usuario from "../Usuario"
 
 const Lista = ({usuarios,borrarUsuario}) => {
 
@@ -7,10 +7,11 @@ const Lista = ({usuarios,borrarUsuario}) => {
 
     return (
         <div>
-           Soy Lista 
+           <p>Ingrese Nombre y Apellido para finalizar</p>
            {usuarios.map(usuario=>{
                return <Usuario key={usuario.id} borrarUsuario={borrarUsuario} usuario={usuario}/>
            })}
+           
         </div>
     )
 }

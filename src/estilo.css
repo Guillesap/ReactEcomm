@@ -214,6 +214,14 @@ main{
     padding: 5px;
     
 }
+
+.box-producto img{
+    display: grid;
+    grid-template-columns: 225px 225px 225px 225px;
+    width: 200px;
+    height: 300px;
+}
+
 article{
     text-align: center;
     width: 300px;

@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { contexto } from "../CartContext.js";
+import Datos from "./Datos"
 
 const Cart = () => {
 
@@ -12,7 +13,8 @@ const Cart = () => {
             <p>Titulo: </p>
             <p>Cantidad Total :{cantidad_total}</p>
             <p>Precio:</p>
-            <h5>Gracias por tu compra!</h5>
+            <h5>Finalizar compra</h5>
+            <Datos/> <h3>Gracias por tu compra</h3>
         </div>
     )
 }
