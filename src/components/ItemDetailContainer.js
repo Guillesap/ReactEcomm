@@ -1,6 +1,8 @@
 import {  useState, useEffect} from "react"
 import ItemDetail from "./ItemDetail"
 import { useParams } from "react-router-dom"
+import { useContext } from "react";
+import { contexto } from "../CartContext";
 
 const detalle= [
     {id: 1, stock: 5, nombre: "Resident Evil", precio: 3500, img: "/img/NEW01.jpg", categoria: "novedades", detalle: "Pelicula de horror y supervivencia, basado en el mitico juego de video. Año 2021."},
@@ -42,6 +44,7 @@ const ItemDetailContainer = () => {
     const [producto, setProducto]= useState ({})
     const [added, setAdded] = useState(false);
     const { id } = useParams()
+    const { addToCart } = useContext(contexto);
     console.log(id)
 
     useEffect(() => {
@@ -63,8 +66,10 @@ const ItemDetailContainer = () => {
         }
         
     }, [id])
+
     const onAdd = (count) => {
-        console.log(`Agregaste 1 Vhs/DVD Titulo: ${producto.nombre},cantidad: ${count}.`); setAdded(true);
+        addToCart(producto, count);
+        setAdded(true); // seteo en tru cuando es agregado el producto
       }
     return (
         <div>

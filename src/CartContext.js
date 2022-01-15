@@ -23,8 +23,8 @@ const CartProvider = ({ children }) => {
     } 
     console.log (carrito);
 
-    const eliminarProducto = (id) => { 
-        const updatedCart = carrito.filter(element => element.id !==id); setCarrito (updatedCart);
+    const deleteItem = (id) => { 
+        const updatedCart = carrito.filter(item => item.item.id !==id); setCarrito (updatedCart);
     }
     
     const limpiarCarrito = () => {
@@ -34,15 +34,19 @@ const CartProvider = ({ children }) => {
     const isInCart = (id) => {
         return carrito.some(element => element.id ===id);
     }
-
+    const productCounter = () => {
+        return carrito.reduce((accum, item) => accum = accum + item.cantidad, 0)
+      }
   
     const valorDelContexto = { 
         carrito, 
         precio_total, 
         cantidad_total , 
         agregarProducto ,
-        eliminarProducto , 
-        limpiarCarrito
+        deleteItem , 
+        isInCart,
+        limpiarCarrito,
+        productCounter
     }
 
     return (
