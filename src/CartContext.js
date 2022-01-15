@@ -1,22 +1,10 @@
-import { createContext, useState } from 'react'
+import { createContext, useEffect, useState } from 'react'
 
-export const contexto = createContext(/* {
-    carrito : [],
-    precio_total : 0,
-    cantidad_total : 0
-} */)
+
+export const contexto = createContext();
 
 const { Provider } = contexto
-//export { contexto }
-
-//const Provider = contexto.Provider
-//const Consumer = contexto.Consumer
-//const { Provider, Consumer } = contexto
-//contexto.Consumer : Te permitia consumir el contexto
-//contexto.Provider : Te permitia proveer el contexto y modificarlo
-//useContext() : Es un hook que te permite consumir el contexto
-
-//console.log(contexto)
+    
 
 const CartProvider = ({ children }) => {
 
@@ -27,16 +15,27 @@ const CartProvider = ({ children }) => {
     
     const agregarProducto = (producto,cantidad) => { 
         console.log (producto,cantidad)
+        const newObj ={
+            item: producto,
+            cantidad: cantidad,
+        }
+        setCarrito([...carrito, newObj])
     } 
-    
-    const eliminarProducto = (id) => { }
+    console.log (carrito);
+
+    const eliminarProducto = (id) => { 
+        const updatedCart = carrito.filter(element => element.id !==id); setCarrito (updatedCart);
+    }
     
     const limpiarCarrito = () => {
         setCarrito([])
      }
 
-    const isInCart = () => {}
-    
+    const isInCart = (id) => {
+        return carrito.some(element => element.id ===id);
+    }
+
+  
     const valorDelContexto = { 
         carrito, 
         precio_total, 

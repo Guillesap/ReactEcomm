@@ -36,7 +36,6 @@ const NavBar = () =>{
                     <Link to="/Cart">
                     <span className="material-icons">shopping_cart
                     </span>
-                    <h2>{cantidad_total}</h2>
                     </Link>
                     </div>
                     </div>

@@ -40,9 +40,7 @@ const Datos = () => {
             <input onChange={handleChangeNombre}/>
             <input onChange={handleChangeApellido}/>
             <button onClick={agregarUsuario}>Enviar Datos</button>
-            <Lista usuarios= {usuarios} borrarUsuario= {borrarUsuarioMemorizada}/>
-         
-            
+            <Lista usuarios={usuarios} borrarUsuario={borrarUsuarioMemorizada}/>
         </div>
     )
 }

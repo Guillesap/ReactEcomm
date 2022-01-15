@@ -11,7 +11,6 @@ const Lista = ({usuarios,borrarUsuario}) => {
            {usuarios.map(usuario=>{
                return <Usuario key={usuario.id} borrarUsuario={borrarUsuario} usuario={usuario}/>
            })}
-           
         </div>
     )
 }
