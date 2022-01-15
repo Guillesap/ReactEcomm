@@ -10,7 +10,7 @@ const CartWidget = () => {
     <>
     <span className="material-icons">shopping_cart
                     </span>
-      {productCounter() > 0 && <Badge bg="secondary">{productCounter()}</Badge>}
+      <h2>{productCounter() > 0 && <Badge bg="danger">{productCounter()}</Badge>}</h2>
     </>
   )
 }
