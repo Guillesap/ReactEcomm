@@ -3,11 +3,11 @@ import { contexto } from "../CartContext.js";
 import { Link } from 'react-router-dom';
 import Datos from "./Datos"
 import CartItem from './CartItem';
-
+import { Button } from 'react-bootstrap';
 
 const Cart = () => {
 
-  const {carrito,deleteItem} = useContext (contexto)
+  const {carrito,deleteItem,limpiarCarrito} = useContext (contexto)
  
   return (
     <div>
@@ -19,6 +19,9 @@ const Cart = () => {
       }
       <h3>Carrito de películas:</h3>
       {(carrito.length > 0) && carrito.map(prod=> <CartItem key={prod.item.id} item={prod} deleteItem={deleteItem} />)}
+      <br></br>
+
+      <h3><Button variant='danger' onClick={() => limpiarCarrito()}>Vaciar Carrito</Button></h3>
       <br></br>
       <h2>Finalizar Compra</h2>
       <br></br>

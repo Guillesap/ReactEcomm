@@ -12,18 +12,22 @@ const CartProvider = ({ children }) => {
     const [precio_total, setPrecio_total] = useState(0)
     const [cantidad_total, setCantidad_total] = useState(0)
 
-    
-    const agregarProducto = (producto,cantidad) => { 
-        console.log (producto,cantidad)
-        const newObj ={
-            item: producto,
-            cantidad: cantidad,
-        }
-        setCarrito([...carrito, newObj])
-    } 
-    console.log (carrito);
 
-    const deleteItem = (id) => { 
+    const agregarProducto = (product, cantidad) => {
+        if (isInCart(product.id)) {
+          console.log('La pelicula está en el carrito');
+        } else {
+          console.log(`Agregaste ${product.nombre}, cantidad: ${cantidad}.`);
+          const newObj = {
+            item: product,
+            cantidad
+          }
+          setCarrito([...carrito, newObj])
+        }
+      }
+
+
+      const deleteItem = (id) => { 
         const updatedCart = carrito.filter(item => item.item.id !==id); setCarrito (updatedCart);
     }
     
@@ -32,7 +36,7 @@ const CartProvider = ({ children }) => {
      }
 
     const isInCart = (id) => {
-        return carrito.some(element => element.id ===id);
+        return carrito.some(element => element.item.id===id);
     }
     const productCounter = () => {
         return carrito.reduce((accum, item) => accum = accum + item.cantidad, 0)
