@@ -14,8 +14,12 @@ const CartProvider = ({ children }) => {
 
 
     const agregarProducto = (product, cantidad) => {
-        if (isInCart(product.id)) {
-          console.log('La pelicula está en el carrito');
+   
+          if (isInCart(product.id)) {
+            const indexActualizar = carrito.findIndex(element => element.item.id === product.id)
+            carrito[indexActualizar].cantidad = carrito[indexActualizar].cantidad + cantidad
+            console.log('El producto ya se encuentra en el carrito.');
+
         } else {
           console.log(`Agregaste ${product.nombre}, cantidad: ${cantidad}.`);
           const newObj = {
