@@ -223,15 +223,14 @@ main{
 
 #elDetalle {
     text-align: center;
-    width: 300px;
+    width: 350px;
     display: inline-block;
-    align-items: center;
     border-radius: 10px;
     padding: 10px;
     border:solid;
     border-color: #bd0a0a;
     margin: 10px;
-    margin-left: 50px;
+    
 }
 #dEtalle{
     text-align: center;
@@ -246,7 +245,11 @@ main{
     border-color: #bd0a0a;
 }
 
-
+#dEtalle img {
+ 
+    border:solid;
+    border-color: goldenrod;
+}
 
 article{
     text-align: center;
