@@ -17,7 +17,7 @@ const CartItem = ({ item, deleteItem }) => {
             Cantidad :{item.cantidad}
           </Col>
           <Col>
-          <Button variant='danger' onClick={() => deleteItem(item.item.id)}>Eliminar</Button>
+          <Button variant='danger' onClick={() => deleteItem(item.item.nombre)}>Eliminar</Button>
           </Col>
         </Row>
       </Container>

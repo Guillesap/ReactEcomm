@@ -1,12 +1,13 @@
 import Item from "./Item"
 
-const ItemList = ({lista}) => {
+const ItemList = ({productos}) => {
+
     return (
-        <div className="box-producto" id="item-container">
-            {lista.map((item,index)=>{
-                return <Item key={index} item={item}/>
-            })}
-        </div>
+        <section id="listado-productos">
+            {productos.map(producto=>{
+                return <Item key={producto.id} producto={producto}/>
+            })}     
+        </section>
     )
 }
 

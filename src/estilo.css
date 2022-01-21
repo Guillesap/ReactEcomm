@@ -178,7 +178,6 @@ padding: 10px;
 
 
 
-
   .box-contador{
       display: flex;
       flex-direction: column;
@@ -222,6 +221,33 @@ main{
     height: 300px;
 }
 
+#elDetalle {
+    text-align: center;
+    width: 300px;
+    display: inline-block;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+    border:solid;
+    border-color: #bd0a0a;
+    margin: 10px;
+    margin-left: 150px;
+}
+#dEtalle{
+    text-align: center;
+    width: 600px;
+    display: grid;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+    border-radius: 20px;
+    padding: 50px;
+    border:solid;
+    border-color: #bd0a0a;
+}
+
+
+
 article{
     text-align: center;
     width: 300px;
@@ -235,15 +261,16 @@ article{
 
 article img{
     border:solid;
-    border-color: red;
+    border-color: gold;
 }
 
 button{
-    background-color: #bd0a0a;
+    background-color: #e00909;
     border: solid;
-    border-color: #e0e2d8;
-    size: 5cm;
+    border-color: #edeee9;
+    size: 3cm;
     width: 150px;
+    margin: 0 auto;
 
 }
 

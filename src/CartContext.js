@@ -13,37 +13,37 @@ const CartProvider = ({ children }) => {
     const [cantidad_total, setCantidad_total] = useState(0)
 
 
-    const agregarProducto = (product, cantidad) => {
+    const agregarProducto = (item, cantidad) => {
    
-          if (isInCart(product.id)) {
-            const indexActualizar = carrito.findIndex(element => element.item.id === product.id)
-            carrito[indexActualizar].cantidad = carrito[indexActualizar].cantidad + cantidad
-            console.log('El producto ya se encuentra en el carrito.');
+      if (isInCart(item.nombre)) {
+        const indexActualizar = carrito.findIndex(element => element.item.nombre === item.nombre)
+        carrito[indexActualizar].cantidad = carrito[indexActualizar].cantidad + cantidad
+        console.log('El producto ya se encuentra en el carrito.');
 
-        } else {
-          console.log(`Agregaste ${product.nombre}, cantidad: ${cantidad}.`);
-          const newObj = {
-            item: product,
-            cantidad
-          }
-          setCarrito([...carrito, newObj])
-        }
+    } else {
+      console.log(`Agregaste ${item.nombre}, cantidad: ${cantidad}.`);
+      const newObj = {
+        item: item,
+        cantidad
       }
+      setCarrito([...carrito, newObj])
+    }
+  }
 
 
-      const deleteItem = (id) => { 
-        const updatedCart = carrito.filter(item => item.item.id !==id); setCarrito (updatedCart);
+      const deleteItem = (nombre) => { 
+        const updatedCart = carrito.filter(element => element.item.nombre !==nombre); setCarrito (updatedCart);
     }
     
     const limpiarCarrito = () => {
         setCarrito([])
      }
 
-    const isInCart = (id) => {
-        return carrito.some(element => element.item.id===id);
+    const isInCart = (nombre) => {
+        return carrito.some(element => element.item.nombre===nombre);
     }
     const productCounter = () => {
-        return carrito.reduce((accum, item) => accum = accum + item.cantidad, 0)
+        return carrito.reduce((accum, product) => accum = accum + product.cantidad, 0)
       }
   
     const valorDelContexto = { 
