@@ -14,7 +14,8 @@ const CartProvider = ({ children }) => {
 
 
     const agregarProducto = (item, cantidad) => {
-   
+    setCantidad_total(cantidad_total + cantidad)
+    setPrecio_total(precio_total + (item.precio * cantidad))
       if (isInCart(item.nombre)) {
         const indexActualizar = carrito.findIndex(element => element.item.nombre === item.nombre)
         carrito[indexActualizar].cantidad = carrito[indexActualizar].cantidad + cantidad

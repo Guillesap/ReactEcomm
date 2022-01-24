@@ -1,14 +1,49 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { contexto } from "../CartContext.js";
 import { Link } from 'react-router-dom';
 import Datos from "./Datos"
 import CartItem from './CartItem';
 import { Button } from 'react-bootstrap';
+import {db} from "./firebase"
+import { collection , addDoc , serverTimestamp } from "firebase/firestore"
+
 
 const Cart = () => {
 
-  const {carrito,deleteItem,limpiarCarrito} = useContext (contexto)
- 
+  const {carrito,deleteItem,limpiarCarrito,cantidad_total} = useContext (contexto)
+  const [orden,setOrden] = useState(false)
+
+  const crearOrden = () => {
+
+      const coleccionProductos = collection(db,"ordenes de peliculas")
+
+      const usuario = {
+          nombre : "Willy",
+          email : "elwilly@hotmail.com",
+          telefono : "1535826900"
+      }
+
+      const orden = {
+          usuario ,
+          carrito,
+          cantidad_total,
+          created_at : serverTimestamp()
+      }
+
+      const pedido = addDoc(coleccionProductos,orden)
+
+      pedido
+      .then((resultado)=>{
+          setOrden(resultado.id)
+
+      })
+      .catch((error)=>{
+          console.log(error)
+      })
+
+  }
+
+
   return (
     <div>
       {carrito.length === 0 &&
@@ -23,12 +58,15 @@ const Cart = () => {
 
       <h3><Button variant='danger' onClick={() => limpiarCarrito()}>Vaciar Carrito</Button></h3>
       <br></br>
-      <h2>Finalizar Compra</h2>
+      <h2><button onClick={crearOrden}>Confirma tu compra</button></h2>
+      {orden && <h4>Gracias por tu compra!   Orden N°:  {orden}</h4>} 
+      
+      <br></br>
+      <h2>Ingresa tus datos</h2>
       <br></br>
       <Datos/>
     </div>
     
-   
   )
 }
 
