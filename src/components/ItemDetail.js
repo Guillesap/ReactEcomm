@@ -26,8 +26,8 @@ const ItemDetail = ({ producto}) => {
         <div className="detalle-producto">
             <h1>{nombre}</h1>
             <img className="detalle-imagen" src={img} />
-            <h3>$ {precio}</h3>
-            <h3> Sinoposis: {detalle}</h3>
+            <h3>Precio: $ {precio}</h3>
+            <h4> Sinoposis: {detalle}</h4>
             {mostrar ? <ItemCount producto={producto} stock={producto.stock} initial={1} onAdd={verQueOnda} /> : null}
             {!mostrar && <button onClick={redirectToCart}>Ir al carrito</button>}
         </div>
