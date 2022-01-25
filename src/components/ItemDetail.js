@@ -1,13 +1,11 @@
-/* eslint-disable no-undef */
 import { useContext, useState } from "react"
-    import { toast } from "react-toastify"
 import ItemCount from "./ItemCount"
 import { contexto } from "../CartContext"
 import { useNavigate } from "react-router-dom";
 
 const ItemDetail = ({ producto}) => {
 
-    const { nombre, detalle, precio,stock, img} = producto
+    const { nombre, detalle, precio, img} = producto
     const [mostrar, setMostrar] = useState(true)
     const { agregarProducto } = useContext(contexto)
     const navigate = useNavigate()
@@ -15,7 +13,6 @@ const ItemDetail = ({ producto}) => {
     const verQueOnda = (cantidad) => {
         setMostrar(false)
         agregarProducto(producto, cantidad)
-        toast.success(`Se agrego el producto al carrito!`)
     }
 
     const redirectToCart = () => {

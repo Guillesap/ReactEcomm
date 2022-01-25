@@ -11,7 +11,7 @@ import { collection , addDoc , serverTimestamp } from "firebase/firestore"
 const Cart = () => {
 
   const {carrito,deleteItem,limpiarCarrito,cantidad_total} = useContext (contexto)
-  const [orden,setOrden] = useState(false)
+  const [orden,  setOrden] = useState(false)
 
   const crearOrden = () => {
 
@@ -29,12 +29,15 @@ const Cart = () => {
           cantidad_total,
           created_at : serverTimestamp()
       }
-
+      
+      
       const pedido = addDoc(coleccionProductos,orden)
 
       pedido
       .then((resultado)=>{
           setOrden(resultado.id)
+          alert("Tu compra ha sido procesada correctamente! " + usuario.nombre + ". Tu código de seguimiento es : " + resultado.id + " se te ha enviado mensaje de whatsapp al N° " + usuario.telefono)
+          limpiarCarrito()
 
       })
       .catch((error)=>{
@@ -60,7 +63,6 @@ const Cart = () => {
       <br></br>
       <h2><button onClick={crearOrden}>Confirma tu compra</button></h2>
       {orden && <h4>Gracias por tu compra!   Orden N°:  {orden}</h4>} 
-      
       <br></br>
       <h2>Ingresa tus datos</h2>
       <br></br>

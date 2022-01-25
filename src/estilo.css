@@ -293,3 +293,182 @@ button{
     margin: 0 auto;
     align-items: center;
   }
+
+
+  /*................................................................*/
+  @media (max-width:700px) {
+    #elHome {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: solid;
+        border-radius: 10%;
+        border-color: rgb(240, 243, 236);
+    }
+    #elHome h2{
+        margin: 0 auto;
+        padding: 1px;
+        color:rgb(207, 160, 5);
+    }
+    
+    .navbar{
+        background-color:#100dd8;
+        margin:0 auto;
+        height: 450px;
+    }
+    
+    .navbar ul {
+    margin:0 auto;
+    font-size: 5px;
+    padding: 5px;  
+    
+    }
+    
+    .navbar li {
+        border: solid;
+        border-color: rgb(236, 235, 230);
+        margin: 10px;
+        height: 50px;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-style: oblique;
+        
+    }
+    #elDetalle {
+        text-align: center;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        border:solid;
+        border-color: #bd0a0a;
+        margin: 0 auto;
+        padding: 50px;
+        
+    }
+    #dEtalle{
+        text-align: center;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        grid-template-rows: auto;
+        justify-items: center;
+        align-items: center;
+        border-radius: 20px;
+        padding: 50px;
+        border:solid;
+        border-color: #bd0a0a;
+        margin: 0 auto;
+    }
+    
+    #elCarrito {
+        display: flex;
+        flex-direction: column;
+        border: solid;
+        border-radius: 10%;
+        border-color: rgb(229, 230, 228);
+
+    }
+    #elCarrito h5 {
+        color: rgb(189, 223, 23);
+        text-align: center;
+    }
+    
+    #elCarrito .material-icons{
+        display: flex;
+        flex-direction: column;
+        color: rgb(160, 175, 19);
+        text-align: center;
+    }
+    
+/*----------------------------------------------------------------*/
+  }
+  @media (max-width:1200px) {
+    #elHome {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: solid;
+        border-radius: 10%;
+        border-color: rgb(240, 243, 236);
+    }
+    #elHome h2{
+        margin: 0 auto;
+        padding: 1px;
+        color:rgb(207, 160, 5);
+    }
+    .navbar{
+        background-color:#bd0a0a;
+        margin:0 auto;
+        height: 400px;
+    }
+    
+    .navbar ul {
+    margin:0 auto;
+    font-size: 5px;
+    padding: 5px;  
+    
+    }
+    
+    .navbar li {
+        border: solid;
+        border-color: rgb(236, 235, 230);
+        margin: 10px;
+        height: 50px;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-style: oblique;
+        
+    }
+    #elDetalle {
+        text-align: center;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        border:solid;
+        border-color: #bd0a0a;
+        margin: 0 auto;
+        padding: 50px;
+        
+    }
+    #dEtalle{
+        text-align: center;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        grid-template-rows: auto;
+        justify-items: center;
+        align-items: center;
+        border-radius: 20px;
+        padding: 50px;
+        border:solid;
+        border-color: #bd0a0a;
+        margin: 0 auto;
+    }
+    
+    #elCarrito {
+        display: flex;
+        flex-direction: column;
+        border: solid;
+        border-radius: 10%;
+        border-color: rgb(229, 230, 228);
+
+    }
+    #elCarrito h5 {
+        color: rgb(244, 245, 239);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #elCarrito .material-icons{
+        display: flex;
+        flex-direction: column;
+        color: rgb(191, 224, 26);
+        margin: 0 auto;
+        size: 10px;
+
+        
+    }
+    
+
+  }

@@ -4,8 +4,6 @@ import { useParams } from "react-router-dom"
 import { db } from "./firebase"
 import { collection , getDocs , query , where } from "firebase/firestore"
 
-
-
 const ItemListContainer = ({ producto }) => {
 
     const [productos, setProductos] = useState([])

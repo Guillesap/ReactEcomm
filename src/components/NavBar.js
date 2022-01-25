@@ -6,7 +6,7 @@ const NavBar = () =>{
 
 
     return (
-            <nav className="navbar navbar-expand-lg navbar-light ">
+            <nav className="navbar navbar-expand-lg navbar-light " >
                 <div className="container-fluid">
                     <div id="elHome">
                     <Link className="navbar-brand" to ="/"><h2>Inicio</h2></Link>
