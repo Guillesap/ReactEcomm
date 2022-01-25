@@ -1,8 +1,10 @@
 import { useEffect , useState } from "react"
 import ItemList from "./ItemList"
+import { Container, Row } from "react-bootstrap";
 import { useParams } from "react-router-dom"
 import { db } from "./firebase"
 import { collection , getDocs , query , where } from "firebase/firestore"
+import Loader from "./Loader";
 
 const ItemListContainer = ({ producto }) => {
 
@@ -48,7 +50,11 @@ const ItemListContainer = ({ producto }) => {
 
 
     return (
-        <ItemList productos={productos}/>
+        <Container>
+        <Row style={{alignItems: 'stretch', justifyContent: 'space-evenly'}}>
+          {loading ? <Loader /> : <ItemList productos={productos} />}
+        </Row>
+      </Container>
     )
    
 }

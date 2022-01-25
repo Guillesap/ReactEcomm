@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 import Datos from "./Datos"
 import CartItem from './CartItem';
 import { Button } from 'react-bootstrap';
-import {db} from "./firebase"
-import { collection , addDoc , serverTimestamp } from "firebase/firestore"
+import {db} from "./firebase";
+import { collection , addDoc , serverTimestamp } from "firebase/firestore";
 
 
 const Cart = () => {
@@ -46,15 +46,19 @@ const Cart = () => {
 
   }
 
-
-  return (
-    <div>
-      {carrito.length === 0 &&
-        <div>
+if (carrito.length === 0){
+  return(
+  <div>
           <h4>No hay películas en el carrito</h4>
           <Link to='/'><h2>Ir al inicio</h2></Link>
-        </div>
-      }
+          {orden && <h4>Gracias por tu compra!   Orden N°:  {orden}</h4>} 
+      
+  </div>
+  )
+} else {
+  return (
+      <>
+      <div>
       <h3>Carrito de películas:</h3>
       {(carrito.length > 0) && carrito.map(prod=> <CartItem key={prod.item.id} item={prod} deleteItem={deleteItem} />)}
       <br></br>
@@ -67,10 +71,12 @@ const Cart = () => {
       <h2>Ingresa tus datos</h2>
       <br></br>
       <Datos/>
-    </div>
-    
+      </div>
+      </>
   )
 }
+}
+
 
 
 export default Cart

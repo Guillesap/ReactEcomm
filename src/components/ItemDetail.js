@@ -3,6 +3,7 @@ import ItemCount from "./ItemCount"
 import { contexto } from "../CartContext"
 import { useNavigate } from "react-router-dom";
 
+
 const ItemDetail = ({ producto}) => {
 
     const { nombre, detalle, precio, img} = producto
@@ -13,6 +14,7 @@ const ItemDetail = ({ producto}) => {
     const verQueOnda = (cantidad) => {
         setMostrar(false)
         agregarProducto(producto, cantidad)
+        console.log(`Se agrego el producto al carrito!`)
     }
 
     const redirectToCart = () => {

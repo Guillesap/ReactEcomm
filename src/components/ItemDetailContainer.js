@@ -3,6 +3,7 @@ import ItemDetail from "./ItemDetail"
 import { db } from "./firebase"
 import { collection, getDoc , doc } from "firebase/firestore"
 import { useParams } from "react-router-dom"
+import Loader from "./Loader";
 
 
 const ItemDetailContainer = () => {
@@ -28,11 +29,12 @@ const ItemDetailContainer = () => {
         })
     }, [id])
 
+
     return (
         <div>
-            {loading ? <span className="loader"></span> : <ItemDetail producto={producto} />}
+           
+            {loading ? <Loader /> : <ItemDetail producto={producto} />}
         </div>
     )
 }
-
 export default ItemDetailContainer
