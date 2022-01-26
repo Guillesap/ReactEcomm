@@ -3,7 +3,7 @@ import { Spinner } from 'react-bootstrap';
 
 const Loader = () => {
   return (
-    <div>
+    <div id="elLoader">
       <Spinner style={{margin: '.5rem'}} animation="grow" size="lg" variant="danger" />
       <Spinner style={{margin: '.5rem'}} animation="grow" size="lg" variant="danger" />
       <Spinner style={{margin: '.5rem'}} animation="grow" size="lg" variant="danger" />

@@ -14,7 +14,6 @@ const ItemDetail = ({ producto}) => {
     const verQueOnda = (cantidad) => {
         setMostrar(false)
         agregarProducto(producto, cantidad)
-        console.log(`Se agrego el producto al carrito!`)
     }
 
     const redirectToCart = () => {
@@ -25,7 +24,7 @@ const ItemDetail = ({ producto}) => {
         <div id="dEtalle">
         <div className="detalle-producto">
             <h1>{nombre}</h1>
-            <img className="detalle-imagen" src={img} />
+            <img src={img} alt={producto.nombre}/>
             <h3>Precio: $ {precio}</h3>
             <h4> Sinoposis: {detalle}</h4>
             {mostrar ? <ItemCount producto={producto} stock={producto.stock} initial={1} onAdd={verQueOnda} /> : null}

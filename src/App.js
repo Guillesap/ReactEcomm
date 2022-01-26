@@ -6,7 +6,7 @@ import Main from "./components/Main";
 import Footer from "./components/Footer";
 import Contacto from "./components/Contacto";
 import CartProvider from "./CartContext";
-import CartWidget from "./components/CartWidget";
+
 
 
 

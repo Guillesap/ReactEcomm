@@ -46,9 +46,7 @@ const ItemListContainer = ({ producto }) => {
 
     },[id])
 
-    const onAdd = () => { }
-
-
+ 
     return (
         <Container>
         <Row style={{alignItems: 'stretch', justifyContent: 'space-evenly'}}>
