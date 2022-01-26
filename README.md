@@ -22,6 +22,10 @@ Para visualizar, en consola digitar: npm run start y en el navegador en la sigui
 Para visualizar la aplicación:
 https://vhsvideoclub.netlify.app/
 
+### Visualización Proyecto en Youtube:
+Para visualizar el funcionamiento de la aplicación:
+https://www.youtube.com/watch?v=zLcXzOZAyIE
+
 
 #### Contacto:
 https://www.linkedin.com/in/guillermosapag/
