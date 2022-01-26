@@ -1,5 +1,5 @@
-# De que trata mi proyecto ? 
--El proyecto tiene como idea la realización de un E-commerce de venta en principio de peliculas, ya sea DVDs o VHS para coleccionistas. 
+# Proyecto VHS Video CLub. 
+-El proyecto se centra en  un E-commerce de venta de peliculas de terror, ya sea DVDs o VHS para coleccionistas. 
 
 ## Tecnologías utilizadas:
 La presente Aplicación de venta de peliculas, fue  creada utilizando: Html, Css, JS, React-Boostrap, React Router Dom y FireBase.
@@ -18,10 +18,13 @@ Se puede realizar navegación a cada categoria y a cada película. Por ello ,  s
 la Presente aplicación, fue realizada con  React JS.
 Para visualizar, en consola digitar: npm run start y en el navegador en la siguiente dirección: http://localhost:3000.
 
-### Netlify:
-Para visualizar la aplicación:
+### Deploy:
+Para visualizar la aplicación, ingresa aquí:
 https://vhsvideoclub.netlify.app/
 
+### Video:
+Para visualizar en video, la funcionalidad de la aplicación, ingresa aqui:
+https://www.youtube.com/watch?v=zLcXzOZAyIE
 
 #### Contacto:
 https://www.linkedin.com/in/guillermosapag/
