@@ -1,41 +1,27 @@
-import { useState } from "react"
+import React, { useState } from "react"
 
+const ItemCount = ( {stock, initial, onAdd}) => {
 
-function ItemCount ({ stockProducto, onAdd}) {
-    console.log(stockProducto)
-    const [contador, setContador] = useState(1)
+    const [ contador, setContador ] = useState(initial);
 
-
-    const aumentarContador = () => {
-        if (stockProducto === contador) {
-            alert("No hay stock disponible")
-        }else{
-            setContador(contador + 1)
-        }
-
+    const sumarProducto = () => {
+        setContador(contador + 1)
     }
-    const restarContador = () => {
-        if (contador=== 1) {
-            alert("Sin peliculas cargadas")
-        } else {
+    const restarProducto = () => {
             setContador(contador - 1)
-        }
     }
-    const resetearContador = () => {
-        setContador(0)
-    }
-
 
     return (
-            <div className="box-contador">
-                <button onClick={aumentarContador}>+</button>
-                <p className="p-contador">{contador}</p>
-                <button onClick={restarContador} >-</button>
-                <button onClick={resetearContador}><span className="material-icons">delete</span></button>
-                <button onClick={() => onAdd(contador)}>Comprar </button>
-            </div>
-            
-    )
-}
 
-export default ItemCount
+        <div className="divCentrado">
+            <button type="button" className="btn btn-danger px-3 mx-3 my-3" onClick={() => restarProducto()} disabled={contador === initial}> - </button>
+            <p className="linksEstilo">{contador}</p>
+            <button type="button" className="btn btn-danger px-3 mx-3 my-3" onClick={() => sumarProducto()} disabled={contador >= stock}> + </button>
+            <button type="button" className="btn btn-danger p-2" onClick={() => onAdd(contador)}>COMPRAR</button>
+        </div>
+    
+        )
+    }
+    
+
+export default ItemCount;
