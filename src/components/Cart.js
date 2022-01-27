@@ -36,7 +36,7 @@ const Cart = () => {
       pedido
       .then((resultado)=>{
           setOrden(resultado.id)
-          alert("Tu compra ha sido procesada correctamente! " + usuario.nombre + ". Tu código de seguimiento es : " + resultado.id + " se te ha enviado mensaje de whatsapp al N° " + usuario.telefono)
+          alert("Tu compra ha sido procesada correctamente. Tu código de seguimiento es : " + resultado.id + " Gracias por tu compra!" )
           limpiarCarrito()
 
       })
@@ -65,12 +65,11 @@ if (carrito.length === 0){
 
       <h3><Button variant='danger' onClick={() => limpiarCarrito()}>Vaciar Carrito</Button></h3>
       <br></br>
+      <h2>Ingresa tus datos</h2>
+      <Datos/>
+      <br></br>
       <h2><button onClick={crearOrden}>Confirma tu compra</button></h2>
       {orden && <h4>Gracias por tu compra!   Orden N°:  {orden}</h4>} 
-      <br></br>
-      <h2>Ingresa tus datos</h2>
-      <br></br>
-      <Datos/>
       </div>
       </>
   )
